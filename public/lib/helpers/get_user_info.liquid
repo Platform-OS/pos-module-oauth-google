@@ -6,7 +6,7 @@ hash_assign get_token_request["client_secret"] = provider.secret_value
 hash_assign get_token_request["code"] = context.params.code
 
 # get access token
-function access_token = "modules/oauth_google/queries/get_token", data: get_token_request
+function access_token = "modules/oauth_google/commands/get_token", data: get_token_request
 assign access_token = access_token.access_token
 
 assign result = "{}" | parse_json
@@ -20,7 +20,7 @@ endif
 assign request_data = "{}" | parse_json
 hash_assign request_data["access_token"] = access_token
 
-function user_info = "modules/oauth_google/queries/get_user_info", data: request_data
+function user_info = "modules/oauth_google/commands/get_user_info", data: request_data
 hash_assign result["first_name"] = user_info.given_name
 hash_assign result["last_name"] = user_info.family_name
 hash_assign result["sub"] = user_info.id

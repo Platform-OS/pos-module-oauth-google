@@ -4,7 +4,7 @@
     "code": {{ object.code | json }},
     "client_id": {{ object.client_id | json }},
     "client_secret": {{ object.client_secret | json }},
-    "redirect_uri": location
+    "redirect_uri": {{ location | json }}
   }
 {% endparse_json %}
 {% return object %}
