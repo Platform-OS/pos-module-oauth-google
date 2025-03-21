@@ -1,0 +1,5 @@
+en:
+  module:
+    button:
+      continue: Continue with Google
+      disconnect: Disconnect from Google

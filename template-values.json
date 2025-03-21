@@ -2,8 +2,5 @@
   "name": "pos-module-oauth-google",
   "machine_name": "oauth_google",
   "type": "module",
-  "version": "0.0.1-beta",
-  "dependencies": {
-    "user": "^3.2.0"
-  }
+  "version": "0.0.2-beta"
 }
