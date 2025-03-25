@@ -11,5 +11,7 @@
     assign result = r.api_call_send.response.body | parse_json
     return result
   endif
+
+  return null
 %}
   
