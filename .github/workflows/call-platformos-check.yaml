@@ -12,4 +12,5 @@ jobs:
   run-platformos-check:
     uses: Platform-OS/gh-workflows/.github/workflows/run_platformos_check_reusable.yml@main
     with:
+      # Adding an input variable to set docker_workspace in reusable workflow
       docker_workspace: public
