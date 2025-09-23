@@ -1,5 +1,5 @@
 en:
-  module:
+  provider:
     button:
       continue: Continue with Google
       disconnect: Disconnect from Google
